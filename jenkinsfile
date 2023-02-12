@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ("Checkout") {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Nanap4212/Terraform-jenkins-project.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/atish7999/Terraform-practical.git']])
             }
         }
         stage ("Terraform init") {
