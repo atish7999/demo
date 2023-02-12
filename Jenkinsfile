@@ -29,7 +29,7 @@ pipeline {
         }
         stage ("Terraform apply") {
             steps {
-                sh ('terraform ${action} --auto-approve') 
+                sh ('terraform ${action} --auto-approve -lock=false') 
             }
         }
     }
