@@ -12,7 +12,7 @@ pipeline {
                 sh ("terraform init -reconfigure")
             }
         }
-        stage ("Terraform formate") {
+        stage ("Terraform format") {
             steps {
                 sh ("terraform fmt")
             }
